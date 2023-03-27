@@ -2,6 +2,7 @@ import { format } from "date-fns";
 
 const getAsteroids = async () => {
   const today = format(new Date(), "yyyy-MM-dd");
+  //In a real application the api key should be stored in something like a key vault
   const apiKey = "VKDGLWcWUJfDwgiom0jW3S2VgrHcYMmQb1pVRoIi";
   const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${today}&end_date=${today}&api_key=${apiKey}`;
   return fetch(url)

@@ -16,8 +16,6 @@ function Asteroids() {
 
   const todaysAsteroids = asteroidsData?.near_earth_objects?.[today];
 
-  console.log("todaysAsteroids", todaysAsteroids);
-
   const diameterText = (diaMin, diaMax) => {
     const diaMinFixed = diaMin.toFixed(2);
     const diaMaxFixed = diaMax.toFixed(2);
@@ -28,8 +26,6 @@ function Asteroids() {
 
   const hazardText = (hazard) =>
     hazard ? "Potentially hazardous" : "No hazard";
-
-  console.log(todaysAsteroids);
 
   return (
     <>

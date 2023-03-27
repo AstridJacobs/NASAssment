@@ -4,7 +4,6 @@ export default function Card({
   item: { title, diameterText, hazardText },
   hazardous,
 }) {
-  console.log(title, hazardous);
   return (
     <StyledCard hazardous={hazardous}>
       <div>

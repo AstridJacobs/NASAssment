@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -16,11 +17,15 @@ export const GlobalStyles = createGlobalStyle`
     color: #fff
   }
   p {
-    text-align: center
+    text-align: center;
   }
   img {
     max-width: 100%;
 }
+`;
+
+export const Paragraph = styled.p`
+  color: #fff;
 `;
 
 export const theme = {
