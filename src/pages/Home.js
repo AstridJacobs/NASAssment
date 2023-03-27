@@ -17,8 +17,12 @@ function Home() {
       </Paragraph>
       <br />
       <Paragraph>
-        To get some background information about the establishment of this page
-        and the choices made, you can take a look under 'About'.
+        To get some background information about the establishment of this
+        application and the choices made, you can take a look under 'About'.
+      </Paragraph>
+      <Paragraph>
+        Got interested in asteroids? Click on the button in the top right to get
+        more information on asteroids on the website of Nasa.
       </Paragraph>
     </Container>
   );
