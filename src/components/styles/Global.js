@@ -28,6 +28,10 @@ export const Paragraph = styled.p`
   color: #fff;
 `;
 
+export const Heading = styled.h2`
+  color: #fff;
+`;
+
 export const theme = {
   colors: {
     header: "#000000",
