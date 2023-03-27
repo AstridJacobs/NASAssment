@@ -22,3 +22,11 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
 }
 `;
+
+export const theme = {
+  colors: {
+    header: "#000000",
+    body: "#000000",
+  },
+  mobile: "768px",
+};
