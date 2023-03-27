@@ -21,23 +21,23 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Header />
-      <ImageContainer
-        style={{
-          backgroundImage: `url(${apodData})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <ImageContainer
+          style={{
+            backgroundImage: `url(${apodData})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/asteroids" element={<Asteroids />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NoPageFound />} />
           </Routes>
-        </BrowserRouter>
-      </ImageContainer>
+        </ImageContainer>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

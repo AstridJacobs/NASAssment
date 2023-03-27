@@ -5,7 +5,7 @@ export const FullHeader = styled.header`
   padding: 40px;
 `;
 
-export const Navbar = styled.nav`
+export const HeaderContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,6 +17,7 @@ export const Navbar = styled.nav`
 export const Logo = styled.img`
   max-width: 7%;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    max-width: 50%;
   }
 `;

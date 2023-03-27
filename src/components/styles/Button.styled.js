@@ -9,9 +9,11 @@ export const Button = styled.button`
   font-weight: 700;
   padding: 15px 60px;
   background-color: ${({ bg }) => bg || "#fff"};
-  color: ${({ color }) => color || "#333"};
+  color: ${({ color }) => color || "#4169E1"};
   &:hover {
-    opacity: 0.9;
-    transform: scale(0.98);
+    transform: scale(1.1);
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 20px;
   }
 `;
